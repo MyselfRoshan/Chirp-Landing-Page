@@ -1,0 +1,115 @@
+:root {
+  --bs-body-font-family: "Inter", sans-serif !important;
+  --bs-border-color: #c1c1c1 !important;
+  --light-blue-bg: #d7f5f5;
+  --payment-card-bg: #fbf8f3;
+  --btn-bg: #1da1f2;
+  --btn-hover: #106194;
+}
+.display-7 {
+  font-size: 1.5rem;
+}
+.navbar-brand {
+  color: #408bf5 !important;
+}
+/* Section Background colors */
+.bg-light:first-of-type {
+  background-color: var(--payment-card-bg) !important;
+}
+section:nth-of-type(3).bg-light,
+footer {
+  background-color: var(--light-blue-bg) !important;
+}
+/* Button Styling */
+.btn-primary {
+  background-color: var(--btn-bg) !important;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: var(--btn-hover) !important;
+}
+.icn-twitter {
+  padding: 0.25rem 0.45rem;
+}
+.bold-blue {
+  color: #137193;
+}
+/* Avater Positioning */
+.lft-1 {
+  left: 1.5rem;
+}
+.lft-2 {
+  left: 3rem;
+}
+.lft-3 {
+  left: 4.5rem;
+}
+.lft-4 {
+  left: 6rem;
+}
+.lft-5 {
+  left: 7.5rem;
+}
+.lft-6 {
+  left: 9rem;
+}
+.lft-7 {
+  left: 10.5rem;
+}
+.lft-8 {
+  left: 12rem;
+}
+
+/* Article Icons */
+.article-icon {
+  width: max(5%, 2.5rem);
+}
+section:nth-of-type(2) h,
+section:nth-of-type(2) p {
+  margin-bottom: 1rem !important;
+}
+
+.border {
+  box-shadow: 0 0.25em 0.5em var(--bs-border-color);
+}
+/* Card */
+.card {
+  --bs-card-height: fit-content !important;
+}
+.card__header::after {
+  content: url("/Assets/Twitter\ \(Blue\).svg");
+  width: max-content;
+  margin-left: auto;
+  margin-block: auto;
+  /* align-items: baseline; */
+}
+.card__header * {
+  margin-bottom: 0;
+}
+.card__avatar {
+  width: 5rem;
+}
+
+/* Payment card */
+.price::after {
+  content: "/mo";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.payment-card {
+  --bs-card-border-color: #fddba3 !important;
+  width: clamp(23rem, 25rem, 33rem);
+}
+.payment-card,
+.payment-card .card-header,
+.payment-card .card-footer {
+  background-color: var(--payment-card-bg) !important;
+}
+
+.payment-card .card-body {
+  list-style: none;
+}
+.payment-card .card-body li::before {
+  content: url("/Assets/Checkmark.svg");
+}
