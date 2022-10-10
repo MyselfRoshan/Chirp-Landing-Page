@@ -6,6 +6,9 @@
   --btn-bg: #1da1f2;
   --btn-hover: #106194;
 }
+p:not(.payment-card p) {
+  color: hsla(0, 0%, 0%, 0.534) !important;
+}
 .display-7 {
   font-size: 1.5rem;
 }
