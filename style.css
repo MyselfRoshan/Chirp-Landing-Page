@@ -102,17 +102,22 @@ section:nth-of-type(2) p {
 }
 .payment-card {
   --bs-card-border-color: #fddba3 !important;
-  width: clamp(23rem, 25rem, 33rem);
-}
-.payment-card,
-.payment-card .card-header,
-.payment-card .card-footer {
+  max-width: 33rem;
   background-color: var(--payment-card-bg) !important;
 }
 
-.payment-card .card-body {
-  list-style: none;
+.payment-card .card-header,
+.payment-card .card-footer {
+  background-color: transparent !important;
 }
+
 .payment-card .card-body li::before {
   content: url("/Assets/Checkmark.svg");
+}
+
+@media (min-width: 992px) {
+  /* Hero button shrink */
+  #hero-section .w-100 {
+    width: fit-content !important;
+  }
 }
