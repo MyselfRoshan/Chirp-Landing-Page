@@ -20,52 +20,72 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <title>Chrip LAnding Page</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand bg-light">
+    <header class="bg-light">
+      <nav class="navbar navbar-expand-sm">
         <div class="container">
           <a href="" class="navbar-brand fw-bold fst-italic">Chrip.</a>
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="" class="nav-link">FAQ</a></li>
-            <li class="nav-item">
-              <button class="btn btn-default navbar-btn btn-primary">
-                <img src="/Assets/Twitter.svg" class="icn-twitter" />Sign in
-                with Twitter
-              </button>
-            </li>
-          </ul>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Pricing</a></li>
+              <li class="nav-item"><a href="" class="nav-link">FAQ</a></li>
+              <li class="nav-item">
+                <button class="btn btn-default navbar-btn btn-primary">
+                  <img src="/Assets/Twitter.svg" class="icn-twitter" />Sign in
+                  with Twitter
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <main>
-      <section id="hero-section" class="bg-light">
+      <section id="hero-section" class="bg-light overflow-hidden">
         <div class="container col-xxl-12 p-lg-5 overflow-hidden">
           <div
             class="row flex-lg-row-reverse align-items-start g-5 py-5 bg-light"
           >
-            <div class="col-10 col-sm-8 col-lg-6 col-md-12">
+            <div class="col-10 offset-1 col-sm-12 offset-sm-0 col-lg-6">
               <img
-                class="d-md-none d-lg-block d-sm-block | mx-lg-auto img-fluid"
+                class="d-md-none d-sm-none d-lg-block | mx-auto img-fluid"
                 src="/Assets/Hero Image (Desktop View).png"
                 alt="Image showing people impression and total engagement in the tweet"
               />
               <img
-                class="d-lg-none d-md-block d-sm-none | mx-auto img-fluid w-100"
+                class="d-none d-md-block d-sm-block d-lg-none | mx-md-auto img-fluid"
                 src="/Assets/Hero Image (Tablet View).png"
                 alt="Image showing people impression and total engagement in the tweet"
               />
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-sm">
               <h1 class="display-5 fw-bold lh-1 mt-lg-5 mb-3">
                 Twitter analytics taken to a whole new level.
               </h1>
@@ -75,9 +95,11 @@
                 importantly, when they are the most active on Twitter.
               </p>
               <div
-                class="gap-4 d-md-flex justify-content-md-start align-items-baseline mb-3"
+                class="d-flex gap-4 flex-column align-items-center flex-lg-row justify-content-md-start align-items-lg-baseline | mb-3"
               >
-                <button class="btn btn-default navbar-btn btn-primary">
+                <button
+                  class="btn btn-default navbar-btn btn-primary | w-100 p-3 p-lg-2"
+                >
                   <img src="/Assets/Twitter.svg" class="icn-twitter" />Sign in
                   with Twitter
                 </button>
@@ -144,7 +166,7 @@
         </div>
       </section>
       <section>
-        <div class="container col-xxl-12 py-5">
+        <div class="container col-xxl-12 py-5 overflow-hidden">
           <h2 class="fw-bold py-3 col-md-5 col-lg-4">
             Features that help you Tweet smarter.
           </h2>
@@ -209,88 +231,90 @@
         </div>
       </section>
       <section class="bg-light">
-        <div class="container py-5">
-          <h2 class="row fw-bold pb-4">What our customers say</h2>
-          <div class="row gap-4">
-            <article class="card p-4 col-lg">
-              <header class="card__header d-flex align-items-center">
-                <figure>
-                  <img
-                    class="card__avatar pe-3"
-                    src="/Assets/userAvatar01.svg"
-                    alt=""
-                  />
-                </figure>
-                <figcaption>
-                  <h5 class="fw-bold">Sara May</h5>
-                  <p>@sara_may</p>
-                </figcaption>
-              </header>
-              <p class="card__body pe-4 my-3">
-                I just tried out @chirp and it's amazing, love all the analytics
-                I can see.
-              </p>
-              <div class="card__footer d-flex justify-content-between">
-                <div class="like">
-                  <img src="/Assets/Like.svg" alt="" />
-                  <span class="ml-auto">2</span>
+        <div class="container col-xxl-12 py-5 overflow-hidden">
+          <h2 class="fw-bold pb-4">What our customers say</h2>
+          <div class="container">
+            <div class="row gap-3">
+              <article class="card p-4 col-lg">
+                <header class="card__header d-flex align-items-center">
+                  <figure>
+                    <img
+                      class="card__avatar pe-3"
+                      src="/Assets/userAvatar01.svg"
+                      alt=""
+                    />
+                  </figure>
+                  <figcaption>
+                    <h5 class="fw-bold">Sara May</h5>
+                    <p>@sara_may</p>
+                  </figcaption>
+                </header>
+                <p class="card__body pe-4 my-3">
+                  I just tried out @chirp and it's amazing, love all the
+                  analytics I can see.
+                </p>
+                <div class="card__footer d-flex justify-content-between">
+                  <div class="like">
+                    <img src="/Assets/Like.svg" alt="" />
+                    <span class="ml-auto">2</span>
+                  </div>
+                  <span>March 2, 2021</span>
                 </div>
-                <span>March 2, 2021</span>
-              </div>
-            </article>
-            <article class="card p-4 col-lg">
-              <header class="card__header d-flex align-items-center">
-                <figure>
-                  <img
-                    class="card__avatar pe-3"
-                    src="/Assets/userAvatar04.svg"
-                    alt=""
-                  />
-                </figure>
-                <figcaption class="">
-                  <h5 class="fw-bold mb-1">Jack Scott</h5>
-                  <p>@jackscott_</p>
-                </figcaption>
-              </header>
-              <p class="card__body pe-4 my-3">
-                I initially started using Chirp to support the co-founder as I
-                personally knew him, but after having tried it out for a few
-                weeks, I can genuienly say this changed my Twitter game.
-              </p>
-              <div class="card__footer d-flex justify-content-between">
-                <div class="like">
-                  <img src="/Assets/Like.svg" alt="" />
-                  <span class="ml-auto">32</span>
+              </article>
+              <article class="card p-4 col-lg">
+                <header class="card__header d-flex align-items-center">
+                  <figure>
+                    <img
+                      class="card__avatar pe-3"
+                      src="/Assets/userAvatar04.svg"
+                      alt=""
+                    />
+                  </figure>
+                  <figcaption class="">
+                    <h5 class="fw-bold mb-1">Jack Scott</h5>
+                    <p>@jackscott_</p>
+                  </figcaption>
+                </header>
+                <p class="card__body pe-4 my-3">
+                  I initially started using Chirp to support the co-founder as I
+                  personally knew him, but after having tried it out for a few
+                  weeks, I can genuienly say this changed my Twitter game.
+                </p>
+                <div class="card__footer d-flex justify-content-between">
+                  <div class="like">
+                    <img src="/Assets/Like.svg" alt="" />
+                    <span class="ml-auto">32</span>
+                  </div>
+                  <span>March 2, 2021</span>
                 </div>
-                <span>March 2, 2021</span>
-              </div>
-            </article>
-            <article class="card p-4 col-lg">
-              <header class="card__header d-flex align-items-center">
-                <figure>
-                  <img
-                    class="card__avatar pe-3"
-                    src="/Assets/userAvatar08.svg"
-                    alt=""
-                  />
-                </figure>
-                <figcaption>
-                  <h5 class="fw-bold">Jessica May</h5>
-                  <p>@jmay98</p>
-                </figcaption>
-              </header>
-              <p class="card__body pe-4 my-3">
-                Absolutely love everything about Chirp, from the design to how
-                everything works smoothly.
-              </p>
-              <div class="card__footer d-flex justify-content-between">
-                <div class="like">
-                  <img src="/Assets/Like.svg" alt="" />
-                  <span class="ml-auto">221</span>
+              </article>
+              <article class="card p-4 col-lg">
+                <header class="card__header d-flex align-items-center">
+                  <figure>
+                    <img
+                      class="card__avatar pe-3"
+                      src="/Assets/userAvatar08.svg"
+                      alt=""
+                    />
+                  </figure>
+                  <figcaption>
+                    <h5 class="fw-bold">Jessica May</h5>
+                    <p>@jmay98</p>
+                  </figcaption>
+                </header>
+                <p class="card__body pe-4 my-3">
+                  Absolutely love everything about Chirp, from the design to how
+                  everything works smoothly.
+                </p>
+                <div class="card__footer d-flex justify-content-between">
+                  <div class="like">
+                    <img src="/Assets/Like.svg" alt="" />
+                    <span class="ml-auto">221</span>
+                  </div>
+                  <span>March 2, 2021</span>
                 </div>
-                <span>March 2, 2021</span>
-              </div>
-            </article>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -303,13 +327,13 @@
               patterns.
             </p>
           </header>
-          <div class="payment-card card px-5 py-4 border-3">
+          <div class="payment-card | card | p-4 px-sm-5 py-sm-4 border-3">
             <div class="card-header px-0">
               <p class="display-7 d-flex flex-column">
                 Monthly <span class="display-5 fw-bold price">$9</span>
               </p>
             </div>
-            <ul class="card-body mt-4 py-0">
+            <ul class="card-body mt-4 py-0 list-group">
               <li class="d-flex gap-3 align-items-center py-2">
                 Unlimited* scheduled tweets and threads.
               </li>
