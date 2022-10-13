@@ -1,10 +1,11 @@
 :root {
   --bs-body-font-family: "Inter", sans-serif !important;
-  --bs-border-color: #c1c1c1 !important;
-  --light-blue-bg: #d7f5f5;
-  --payment-card-bg: #fbf8f3;
-  --btn-bg: #1da1f2;
-  --btn-hover: #106194;
+  --bs-border-color: hsl(0, 0%, 76%) !important;
+  --light-blue-bg: hsl(180, 60%, 90%);
+  --payment-card-bg: hsl(38, 50%, 97%);
+  --btn-bg: hsl(203, 89%, 53%);
+  --btn-hover: hsl(203, 80%, 32%);
+  --box-shadow-comments: hsl(203 89% 53% / 0.5);
 }
 p:not(.payment-card p) {
   color: hsla(0, 0%, 0%, 0.534) !important;
@@ -13,7 +14,7 @@ p:not(.payment-card p) {
   font-size: 1.5rem;
 }
 .navbar-brand {
-  color: #408bf5 !important;
+  color: hsl(215, 90%, 61%) !important;
 }
 /* Section Background colors */
 .bg-light:first-of-type {
@@ -36,7 +37,7 @@ footer {
   padding: 0.25rem 0.45rem;
 }
 .bold-blue {
-  color: #137193;
+  color: hsl(196, 77%, 33%);
 }
 /* Avater Positioning */
 .lft-1 {
@@ -73,8 +74,11 @@ section:nth-of-type(2) p {
   margin-bottom: 1rem !important;
 }
 
-.border {
+.border__features {
   box-shadow: 0 0.25em 0.5em var(--bs-border-color);
+}
+.border__comments {
+  box-shadow: 0 0.25em 0.5em var(--box-shadow-comments);
 }
 /* Card */
 .card {
@@ -101,7 +105,7 @@ section:nth-of-type(2) p {
   font-weight: 400;
 }
 .payment-card {
-  --bs-card-border-color: #fddba3 !important;
+  --bs-card-border-color: hsl(37, 96%, 82%) !important;
   max-width: 33rem;
   background-color: var(--payment-card-bg) !important;
 }
